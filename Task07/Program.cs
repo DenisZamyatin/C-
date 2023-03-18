@@ -10,11 +10,9 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num >=100 && num <=999)
 {
     int numLast = num %10;
-    Console.Write(numLast );
+    Console.Write(numLast);
 }
-
 else
-
 {
     Console.Write("Некорректное число");
 }
