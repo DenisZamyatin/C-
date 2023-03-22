@@ -1,24 +1,15 @@
-﻿ Console.Write ("Введите число от 1 до 7: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+﻿//  Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-if (number1 = number1<=5)
+// 6 -> да
+// 7 -> да
+// 1 -> нет
 
+Console.Write("Введите число от 1 до 7:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num >= 1 && num <= 7)
 {
-    Console.Write ("Нет");
+    if (num == 6 | num == 7) Console.WriteLine("Сегодня выходной");
+    else Console.WriteLine("Сегодня рабочий день");
 }
-
-if (number1= number1<=7)
-
-{
-    Console.Write ("Выходной");
-}
-
-else (number1 = number1>7);
-
-{
-    Console.Write ("Не верное число");
-}
-    // if (result == 0)
-    //     Console.WriteLine("Кратно");
-    // else
-    //     Console.WriteLine($"Не кратно, остаток {result}");
+ else Console.WriteLine("Не верное число");
