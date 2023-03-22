@@ -39,9 +39,9 @@
     else
         Console.WriteLine($"Не кратно, остаток {result}");
     
-    int RemainderDivision(int number1, int number2)
+    int RemainderDivision(int num1, int num2)
     {
-        int res = number1% number2;
-        return res;
+
+        return num1 % num2;
     }
  
