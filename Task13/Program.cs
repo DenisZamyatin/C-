@@ -5,6 +5,21 @@
 // 78 -> третьей цифры нет
 
 // 32679 -> 6
+Console.Write("Введите любое число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write ("Введите целое число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+int numDigit = NumberDigit(num);
+if (numDigit <= 2)
+{
+    Console.WriteLine("третьей цифры нет");
+}
+
+else
+{
+    if (numDigit > 3)
+    {
+        num = num/Convert.ToInt32(Math.Pow(10, numDigit - 3)); 
+    }
+    num = num % 10;
+    Console.WriteLine($"Третья цифра введённого числа: {num}");
+}
