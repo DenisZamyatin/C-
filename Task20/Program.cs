@@ -4,7 +4,7 @@
 // пространстве.
 // A (3,6); B (2,1) -> 5,09
 // A (7,-5); B (1,-1) -> 7,21
- 
+
 double Distance(int x1, int y1, int x2, int y2)
 {
 int x = x1 - x2;
