@@ -10,6 +10,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int sumnumbers = Sumnumbers(number);
 Console.WriteLine ($"сумма чисел от 1 до {number} = {sumnumbers}");
+
+
 int Sumnumbers(int num)
 {
     int sum = 0;
