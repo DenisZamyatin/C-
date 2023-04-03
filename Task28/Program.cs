@@ -1,24 +1,23 @@
-﻿// Задача 26: Напишите программу, которая принимает
-// на вход число и выдаёт количество цифр в числе.
-// 456 -> 3
-// 78 -> 2
-// 89126 -> 5
-
+﻿// Задача 28: Напишите программу, которая
+// принимает на вход число N и выдаёт
+// произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
 
 Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine()); 
 
-int countDigit = CountDigit(number);
-Console.WriteLine ($"Количество символов: {number}: {countDigit}");
+int sumnumbers = Sumnumbers(number);
+Console.WriteLine ($"произведение чисел от 1 до {number} = {sumnumbers}");
 
-int CountDigit(int num)
+
+int Sumnumbers(int num)
 {
-    int count =0;
-
-    while (num > 0)
+    int product = 1;
+    for (int count = 2; count <=num; count++)
     {
-        count++;
-        num /= 10;
+       product=product*count; // sum = sum + i; 
     }
-    return count;
+    return product;
 }
+
